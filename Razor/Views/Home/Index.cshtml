@@ -57,7 +57,29 @@
 
     <span>@conteggio</span>
 <p> 4. Creare una List <int> di 20 numeri interi (generati random da 1 a 90, 1 e 90 inclusi) e mostrare in pagina solo i numeri compresi tra 20 e 70</p>
+    @{
+        Random random = new Random();
+        List<int> numeriInteriRandom = new List<int>();
 
+        for (int i = 0; i < 20; i++)
+        {
+            int numero = random.Next(1, 101);
+            numeriInteriRandom.Add(numero);
+        }
+    }
+
+
+<ul>
+        @{
+            foreach (int n in numeriInteriRandom)
+            {
+                if (n >= 20 && n <= 70)
+                {
+                <li>@n</li>
+                }
+            }
+        }
+</ul>
 <p> 5. Stampare in pagina la data e l'ora attuale (usando la classe DateTime) con il formato anno-mese-giorno ore:minuti:secondi </p>
 
 <p> 6. Partendo dalla data di oggi (usando la classe DateTime) stampare in pagina </p>
