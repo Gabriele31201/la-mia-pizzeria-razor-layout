@@ -12,15 +12,22 @@ namespace LaMiaPizzeria.Controllers
         {
             _logger = logger;
         }
-
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
-
+        [HttpGet]
         public IActionResult Privacy()
         {
-            return View();
+            return View("Privacy");
+        }
+
+
+        [HttpGet]
+        public IActionResult Contacts()
+        {
+            return View("Contacts");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
