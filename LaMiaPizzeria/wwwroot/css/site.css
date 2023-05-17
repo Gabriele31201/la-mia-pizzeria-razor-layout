@@ -21,7 +21,7 @@ body {
     font-size: 40px;
 }
 
-.bg_navbar{
+.bg-navbar{
     background-color: mediumpurple;
     
     
@@ -41,3 +41,5 @@ body {
 .bg-footer {
     background-color:  rgb(0, 0, 0, 0,50)
 }
+
+
